@@ -23,14 +23,18 @@ class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
+        if(!cheeseAsked){
         this.price += 80;
         cheeseAsked = true;
+        }
     }
 
     public void addExtraToppings(){
         // your code goes here
+        if(!toppingsAsked){
          this.price += (isVeg) ? 70 : 120;
          toppingsAsked = true;
+        }
     }
 
     public void addTakeaway(){
