@@ -43,8 +43,10 @@ public class Pizza {
 
     public void addTakeaway(){
         // your code goes here
-        this.price += 20;
-        isTakeAway = true;
+        if(!isTakeAway) {
+            this.price += 20;
+            isTakeAway = true;
+        }
     }
 
     public String getBill(){
