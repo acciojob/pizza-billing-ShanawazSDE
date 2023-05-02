@@ -51,7 +51,7 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        bill = "";
+       // bill = "";
         bill += "Base Price Of The Pizza: "+price+"\n";
         if(cheeseAsked) bill += "Extra Cheese Added: 80\n";
         if(toppingsAsked) bill += "Extra Toppings Added: "+toppingPrice+"\n";
